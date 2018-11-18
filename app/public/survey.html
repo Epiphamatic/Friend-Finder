@@ -8,28 +8,36 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
 
 	<!-- Link static CSS -->
 
-	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="/survey.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Charmonman|Lora" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="container content">
-	
-	<h1>Survey</h1>
+<div class="title">Survey</div>
+
+<div class="container formFill">
 	
 	<form>
 		<div class="form-group">
+			<p>Name</p>
 			<input id="name" type="text" class="form-control" placeholder="Name (Required)">
 		</div>
 
 		<div class="form-group">
+			<p>Profile Photo</p>
 			<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
 		</div>
 
@@ -156,7 +164,8 @@
 	</form>
 
 	<div class="text-center">
-		<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+		<a href="/survey"><button id="resetBtn" type="submit" class="btn btn-light">Reset</button></a>
+		<button id="submitBtn" type="submit" class="btn btn-light">Submit</button>
 	</div>
 	
 	<!-- Modal after survey completion -->
@@ -165,34 +174,21 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
+					<div class="modal-title modalTitle">Your New Friend</div>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h3 class="modal-title">Your New Friend</h1>
+					
 				</div>
 				<div class="modal-body">
 					<h2 id="bestFriend"></h2>
 					<img id="bestFriendPhoto" src="#">
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<footer>
-	<div class="container">
-		<a href="/api/friends">Friends</a>
-		<span>|</span>
-		<a href="https://github.com/Epiphamatic/Friend-Finder">GitHub Repo</a>
-	</div>
-</footer>
-
-<script
-	src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>

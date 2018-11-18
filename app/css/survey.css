@@ -1,0 +1,68 @@
+body {
+
+    background: linear-gradient(116deg, rgb(255, 0, 0), rgb(255, 229, 0));
+    font-family: 'Lora', serif;
+}
+
+.title {
+    
+    font-size: 13vh;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+}
+
+.formFill {
+
+    background: rgba(255, 255, 255, 0.73);
+    border-radius: 6px;
+    padding: 5vh;
+    font-size: 3vh;
+    margin-bottom: 5vh;
+}
+
+.form-group {
+
+    margin-bottom: 5vh;
+}
+
+label {
+
+    margin-bottom: 2vh;
+}
+
+p {
+
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+#submitBtn {
+
+    font-size: 4vh;
+}
+
+#resetBtn {
+
+    font-size: 4vh;
+    margin-right: 2vw;
+}
+
+.modalTitle {
+
+    font-size: 3vh;
+}
+
+#bestFriend {
+
+    font-size: 4vh;
+    margin-bottom: 2vh;
+}
+
+#bestFriendPhoto {
+
+    width: 100%;
+    height: auto;
+}
